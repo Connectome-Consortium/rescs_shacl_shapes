@@ -16,9 +16,23 @@
   "url": {
     "@id": "http://www.example.com/3"
   },
-  "fundedItem": {
-    "@id": "http://www.example.com/4",
-    "@type": "Thing",
-    "name": "item"
-  }
+  "fundedItem": [
+    {
+      "@id": "http://www.example.com/4",
+      "@type": "CreativeWork",
+      "name": "item",
+      "author": {
+        "@id": "http://www.example.com/5",
+        "@type": "Person",
+        "name": "John Doe",
+        "givenName": "John",
+        "familyName": "Doe"
+      }
+    },
+    {
+      "@id": "http://www.example.com/6",
+      "@type": "Organization",
+      "name": "my org"
+    }
+  ]
 }

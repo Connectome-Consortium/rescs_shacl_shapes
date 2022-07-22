@@ -16,13 +16,27 @@
   "url": {
     "@id": "http://www.example.com/3"
   },
-  "fundedItem": {
-    "@id": "http://www.example.com/4",
-    "@type": "Thing",
-    "name": "item"
-  },
+  "fundedItem": [
+    {
+      "@id": "http://www.example.com/4",
+      "@type": "CreativeWork",
+      "name": "item",
+      "author": {
+        "@id": "http://www.example.com/5",
+        "@type": "Person",
+        "name": "John Doe",
+        "givenName": "John",
+        "familyName": "Doe"
+      }
+    },
+    {
+      "@id": "http://www.example.com/6",
+      "@type": "Organization",
+      "name": "my org"
+    }
+  ],
   "funder": {
-    "@id": "http://www.example.com/5",
+    "@id": "http://www.example.com/7",
     "@type": "Person",
     "name": "John Doe",
     "additionalName": "Joe",
@@ -32,13 +46,13 @@
     "givenName": "John",
     "jobTitle": "developer",
     "affiliation": {
-      "@id": "http://www.example.com/6",
+      "@id": "http://www.example.com/8",
       "@type": "Organization",
       "name": "my org",
       "address": "Fakestreet, Faketown",
       "email": "info@contact.com",
       "contactPoint": {
-        "@id": "http://www.contact.com/7",
+        "@id": "http://www.contact.com/9",
         "@type": "ContactPoint",
         "name": "a contact point,",
         "availableLanguage": "eng",

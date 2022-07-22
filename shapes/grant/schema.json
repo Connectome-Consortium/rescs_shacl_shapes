@@ -27,8 +27,20 @@
               "path": "schema:fundedItem",
               "name": "fundedItem",
               "description": "Indicates an item funded or sponsored through a [[Grant]].",
-              "class": "schema:Thing",
-              "nodeKind": "sh:IRI",
+              "or": [
+                {
+                  "class": "schema:Person",
+                  "nodeKind": "sh:IRI"
+                },
+                {
+                  "class": "schema:Organization",
+                  "nodeKind": "sh:IRI"
+                },
+                {
+                  "class": "schema:CreativeWork",
+                  "nodeKind": "sh:IRI"
+                }
+              ],
               "minCount": 1
             }
           ]
