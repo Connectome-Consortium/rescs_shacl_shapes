@@ -28,8 +28,7 @@
               "name": "about",
               "description": "The subject matter of the content.",
               "class": "schema:Thing",
-              "nodeKind": "sh:IRI",
-              "maxCount": 1
+              "nodeKind": "sh:BlankNodeOrIRI"
             },
             {
               "path": "schema:abstract",
@@ -52,14 +51,13 @@
               "or": [
                 {
                   "class": "schema:Person",
-                  "nodeKind": "sh:IRI"
+                  "nodeKind": "sh:BlankNodeOrIRI"
                 },
                 {
                   "class": "schema:Organization",
-                  "nodeKind": "sh:IRI"
+                  "nodeKind": "sh:BlankNodeOrIRI"
                 }
-              ],
-              "minCount": 1
+              ]
             },
             {
               "path": "schema:citation",
@@ -203,8 +201,7 @@
               "path": "schema:inLanguage",
               "name": "inLanguage",
               "description": "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
-              "datatype": "xsd:string",
-              "pattern": "^[a-z]{3}$"
+              "datatype": "xsd:string"
             },
             {
               "path": "schema:isAccessibleForFree",
@@ -287,14 +284,13 @@
               "or": [
                 {
                   "class": "schema:Person",
-                  "nodeKind": "sh:IRI"
+                  "nodeKind": "sh:BlankNodeOrIRI"
                 },
                 {
                   "class": "schema:Organization",
-                  "nodeKind": "sh:IRI"
+                  "nodeKind": "sh:BlankNodeOrIRI"
                 }
-              ],
-              "maxCount": 1
+              ]
             },
             {
               "path": "schema:temporalCoverage",
@@ -320,7 +316,7 @@
               "name": "spatialCoverage",
               "description": "The spatialCoverage of a CreativeWork indicates the place(s) which are the focus of the content. It is a subproperty of\n      contentLocation intended primarily for more technical and detailed materials. For example with a Dataset, it indicates\n      areas that the dataset describes: a dataset of New York weather would have spatialCoverage which was the place: the state of New York.",
               "class": "schema:Place",
-              "nodeKind": "sh:IRI"
+              "nodeKind": "sh:BlankNodeOrIRI"
             }
           ]
         }
