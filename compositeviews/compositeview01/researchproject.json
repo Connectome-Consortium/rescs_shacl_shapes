@@ -231,5 +231,6 @@
   "resourceTypes": [
     "http://schema.org/ResearchProject"
   ],
-  "includeMetadata": false
+  "includeMetadata": false,
+  "includeContext": true
 }

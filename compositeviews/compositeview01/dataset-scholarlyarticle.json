@@ -201,5 +201,6 @@
     "http://schema.org/Dataset",
     "http://schema.org/ScholarlyArticle"
   ],
-  "includeMetadata": false
+  "includeMetadata": false,
+  "includeContext": true
 }
